@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript</title>
+</head>
+<body>
+
+<h2>
+  Javascript dans head (en tete)
+</h2>
+<head>
+<script>
+  function myfunction(){
+    document.getElementById("demo").innerHTML='paragraphe changer';
+  }
+</script>
+</head>
+<p id="demo">
+Un paragraphe  
+</p>
+<button type="button" onclick="myfunction()">
+  Essayer encore
+</button>
+<br>
+<br>
+
+<h2>
+  Javascript dans body (corp)
+</h2>
+
+<p id="dem">
+Best program 
+</p>
+
+<button type="button" onclick="myfun()">
+  Cliquer
+</button>
+
+<script>
+
+  function myfun(){
+    document.getElementById("dem").innerHTML='Paragraphe changer';
+  }
+</script>
+<br>
+<br>
+
+<h1>
+Sortie JavaScript
+</h1>
+<h2>
+ 1.0- Utilisation innerHTML 
+</h2>
+
+<p id="operation"></p>
+
+<button type="button" onclick="document.getElementById('operation').innerHTML=5 + 5  ">
+Cliquer
+</button>
+<br>
+<br>
+<h2>
+  1.1- Utilisation de document write 
+</h2>
+<p>Calcul :</p>
+<script>
+  document.write(5 + 5);
+</script>
+<br>
+<h2>
+  1.2- Utilisation de document write (efface tout le contenu HTML)
+</h2>
+<p>Calcul :</p>
+<button type="button" onclick="document.write(5 + 7)">
+Cliquer
+</button>
+<br>
+<h2>
+  2.1- Utilisation de window alert ou alert
+</h2>
+<script>
+alert(4+6);
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

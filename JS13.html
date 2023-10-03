@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <u>
+        <h2>
+            Methodes de Chaines
+        </h2>
+    </u>
+    <h2>
+        slice() :
+    </h2>
+    <p id="Chaines"></p>
+<script>
+let a = "Citron,banane,ananas";
+
+document.getElementById("Chaines").innerHTML= 
+"La nouvelle chaine est : "+ a.slice(-20,-14);
+document.getElementById("Chaines").style.fontSize="2em";
+</script>
+<br>
+<h2>
+substring() :
+</h2>
+<p id="sub"></p>
+<script>
+let b = "Citron,banane,ananas";
+
+document.getElementById("sub").innerHTML= b.substring(-13,-7);
+</script>
+<br>
+<h2>
+    1.1- Remplacement du contenu de chaine :
+</h2>
+<p id="con"></p>
+<script>
+let q = "Rendez-vous a Canado";
+//let r = q.replace("Canado","ESIH");
+
+document.getElementById("con").innerHTML= q.replace("Canado","ESIH");
+</script>
+<br>
+<h2>
+    1.2- Remplacement du contenu de chaine :
+</h2>
+<p id="rap">
+    Rendez-vous a Canado
+</p>
+<script>
+function ramp(){
+let d = "Rendez-vous a Canado";
+//document.getElementById("rap").innerHTML=d.replace("Canado","ESIH");
+d = d.replace("Canado","ESIH");
+document.getElementById("rap").innerHTML=d;
+}
+</script>
+<button type="button" onclick="ramp()">Click</button>
+<br>
+<h2>
+    1.3- Remplacement du contenu de chaine :
+</h2>
+<p id="conte">
+    Rendez-vous a Canado et Canado.
+</p>
+<script>
+function resu(){
+let u = "Rendez-vous a Canado et Canado.";
+//document.getElementById("conte").innerHTML= u.replace(/Canado/g,"ESIH");
+u = u.replace(/Canado/g,"ESIH");
+document.getElementById("conte").innerHTML=u;
+//insensible a la casse (/.../i).
+//correspondance globale (/.../g).
+}
+</script>
+<button type="button" onclick="resu()">Click</button>
+<br>
+<h2>
+    Replace All :
+</h2>
+<p id="place">
+    I love cats. Cats are very easy to love. Cats are very popular.
+</p>
+<script>
+function plac(){
+let r = "I love cats. Cats are very easy to love. Cats are very popular.";
+//document.getElementById("place").innerHTML=r.replaceAll("Cats","Dogs");
+//document.getElementById("place").innerHTML=r.replaceAll("cats","dogs");
+r = r.replaceAll(/Cats/g,"Dogs");
+r = r.replaceAll("cats","dogs");
+document.getElementById("place").innerHTML=r;
+
+}
+</script>
+<button type="button" onclick="plac()">Click</button>
+<br>
+<h2>
+    toUpperCase() et toLowerCase() :
+</h2>
+<p id="maji">
+BONJOUR INSTAGRAM.
+</p>
+<script>
+function maj(){
+let z = "BONJOUR INSTAGRAM";
+z = z.toLowerCase();
+document.getElementById("maji").innerHTML= z;
+}
+</script>
+<button type="button" onclick="maj()">Essayer</button>
+<br>
+<h2>
+    Concat():
+</h2>
+<p id="conc"></p>
+<script>
+let y = "Calixte";
+let v = "Needless";
+let result = y.concat(" ",v);
+document.getElementById("conc").innerHTML= result;
+//document.getElementById("conc").innerHTML= "I am "+ y + " "+ v + ".";
+//concat() a la meme fonctionaliter que +
+</script>
+<br>
+<h2>
+    Trime() :
+</h2>
+<p id="supp"></p>
+<script>
+    //supprime les espaces
+let tex1 = "       La vie est belle      ";
+let tex2 = tex1.trim();
+document.getElementById("supp").innerHTML= 
+"Longueur texte 1 est "+ tex1.length + 
+",longueur texte 2 est "+ tex2.length;
+
+</script>
+<br>
+<h2>
+    trimStart() :
+</h2>
+<p id="uu"></p>
+<script>
+//supprime les espace situe au debut
+let t1 = "    Merci Jesus     ";
+let t2 = t1.trimStart();
+document.getElementById("uu").innerHTML= 
+"Long texte 1 est "+ t1.length + ",long texte 2 est "+ t2.length;
+</script>
+<br>
+<h2>
+    trimEnd() :
+</h2>
+<p id="fin"></p>
+<script>
+//supprime les espaces a la fin
+let t4 = "    Merci Jesus     ";
+let t5 = t4.trimEnd();
+document.getElementById("fin").innerHTML= 
+"Long texte 1 est "+ t4.length + ",long texte 2 est :"+ t5.length;
+</script>
+<br>
+<h2>
+    padstart() et padend() :
+</h2>
+<p id="pass"></p>
+<script>
+//padstart pour remplir une chaine des le debut
+
+var m = 8;
+//pour convertir chiffre en texte on utilise tostring() ou "...".
+var n = m.toString();
+//utilisation de padstart
+var k = n.padStart(5,"X");
+//affichage
+document.getElementById("pass").innerHTML= k;
+
+</script>
+<br>
+<p id="pass1"></p>
+<script>
+var m = 8;
+//pour convertir chiffre en texte on utilise tostring() ou "...".
+var n = m.toString();
+//utilisation de padstart
+var k = n.padEnd(5,"Y");
+//affichage
+document.getElementById("pass1").innerHTML= k;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

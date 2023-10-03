@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <u>
+        <h2>
+            Fonction
+        </h2>
+    </u>
+<p id="function"></p>
+<script>
+    //declaration fonction
+function myfunction(a,b){
+return a * b;
+}
+//variable pour le resultat
+let result = myfunction(10,5);
+//affichage resultat
+document.getElementById("function").innerHTML= "Le resultat est "+ result;
+</script>
+<br>
+<br>
+<p id="ope"></p>
+<script>
+function ope$(x,y){
+
+    return x ** y;
+}
+let resultat = ope$(10,2);
+document.getElementById("ope").innerHTML= resultat;
+</script>
+<br>
+<br>
+<h2>
+    Convertir cm en m :
+</h2>
+<p id="con"></p>
+<script>
+function conv(v){
+
+    return (10**-2) * (v);
+}
+//let resu = conv(20);
+document.getElementById("con").innerHTML= "20 cm en m est egal a : "+conv(20)+" m.";
+</script>
+
+</body>
+</html>

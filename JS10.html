@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <u>
+        <h2>
+            Objets
+        </h2>
+    </u>
+    <p id="Objets"></p>
+<script>
+const voiture = {Marque:'Jeep',Model:'Rubicon',Couleur:'Blanc'};
+
+document.getElementById("Objets").innerHTML="La marque est "+ voiture.Marque;
+</script>
+<br>
+<br>
+<p id="ob"></p>
+<script>
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+document.getElementById("ob").innerHTML=person.fullName();
+</script>
+</body>
+</html>

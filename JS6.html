@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <u>
+        <h2>
+            Utilisation de const
+        </h2>
+    </u>
+    <p id="demo"></p>
+<script>
+//declaration et affectation utilisation de try(bloc de code contenant erreur)
+try{
+    const PI = 3.141592653589793;
+PI = 3.14;
+}
+catch (err){
+    document.getElementById("demo").innerHTML=err;
+}
+</script>
+<br>
+<br>
+<u>
+    <h2>
+        Tableau avec constante
+    </h2>
+</u>
+<p id="voiture"></p>
+<script>
+//declaration et affectation
+const voiture = ['Audi','Noir',2023];
+//modification element
+voiture[1] = 'Bleu';
+//new element
+voiture.push('Q8');
+//affichage
+document.getElementById("voiture").innerHTML= voiture ;
+</script>
+<br>
+<br>
+<u>
+    <h2>
+        Creation d'objet
+    </h2>
+</u>
+<p id="pers"></p>
+<script>
+    //creation objet
+const personne = {Nom:"Calixte",Prenom:"Needless",Age:20};
+//changement de propriete
+personne.Age = 21;
+//add property
+personne.owner = "Xachir";
+
+document.getElementById("pers").innerHTML = "Le pere est "+ personne.owner;
+</script>
+
+</body>
+</html>

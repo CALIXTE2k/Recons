@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <u>
+        <h2>
+            Operateur (++ et --)
+        </h2>
+    </u>
+<p id="Operateur"></p>
+<script>
+//variables
+let v = 10;
+let z = v;
+v++;
+
+//affichage
+document.getElementById("Operateur").innerHTML= "Le resultat est "+ v; 
+</script>
+<br>
+<br>
+<p id="ope"></p>
+<script>
+let r = 100;
+let e = r;
+--r;
+
+//affichage
+document.getElementById("ope").innerHTML="Le resultat est "+ r;
+</script>
+<br>
+<br>
+<u>
+    <h2>
+        Exponentiation
+    </h2>
+</u>
+<br>
+<u>
+    <h2>
+        1-
+    </h2>
+</u>
+<p id="Expo"></p>
+<script>
+let o = 5;
+let i = o ** 2;
+
+//affichage
+document.getElementById("Expo").innerHTML="Le resultat est "+ i;
+</script>
+<br>
+<br>
+<u>
+    <h2>
+        2-
+    </h2>
+</u>
+<p id="expon"></p>
+<script>
+//var k = 5;
+//var u = 2;
+document.getElementById("expon").innerHTML= Math.pow(5,2);
+
+</script>
+<br>
+<br>
+<u>
+    <h2>
+        Type de donnees (dynamiques)
+    </h2>
+</u>
+<p id="do"></p>
+<script>
+let g;
+g = 1;
+g = 2;
+
+//affichage
+document.getElementById("do").innerHTML="La valeur est "+ g;
+</script>
+<br>
+<br>
+<h2>
+    Booleen
+</h2>
+<p id="bool"></p>
+<script>
+var w = 6;
+var p = 8;
+var t = 6;
+
+//affichage
+document.getElementById("bool").innerHTML=
+ (w == p)+"<br>"+(w != p);
+</script>
+<br>
+<u>
+    <h2>
+        Le typeof
+    </h2>
+</u>
+<p id="ty"></p>
+<script>
+document.getElementById("ty").innerHTML=typeof 'Calixte';
+</script>
+</body>
+</html>

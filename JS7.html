@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <u>
+        <h2>
+            Les operateurs
+        </h2>
+    </u>
+<p id="arith"></p>
+<script>
+let a,b;
+a = 20;
+b = (5 + 4) * a;
+
+//affichage
+document.getElementById("arith").innerHTML = "Le resultat est " + b;
+</script>
+<br>
+<br>
+<u>
+    <h2>
+        Operateur d'affectation d'ajout (+=)
+    </h2>
+</u>
+<p id="ajout"></p>
+<script>
+var e = 2;
+e **= 2;
+//affichage
+document.getElementById("ajout").innerHTML = "Le resultat est "+ e;
+</script>
+<u>
+    <h2>
+        Operateur de comparaison
+    </h2>
+</u>
+<p id="comparaison"></p>
+<script>
+
+let text1 = "D";
+let text2 = "E";
+let resultat = text1 < text2;
+
+//affichage
+document.getElementById("comparaison").innerHTML = "D est-il inferieur a E ? "+ resultat;
+</script>
+<br>
+<br>
+<u>
+    <h2>
+        Operateur de concatenation (caractere)
+    </h2>
+</u>
+<p id="aj"></p>
+<script>
+let q = "Calixte";
+q += " Needless"; 
+//affichage
+document.getElementById("aj").innerHTML = q;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
